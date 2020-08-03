@@ -13,6 +13,11 @@ public class AddressController {
     @Autowired
     private AddressService addressService;
 
+    @RequestMapping("test")
+    public String test(){
+        return "test";
+    }
+
 
     @RequestMapping("queryAddressList")
     public ServerResponse queryAddressList(){
